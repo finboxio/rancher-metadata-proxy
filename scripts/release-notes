@@ -16,5 +16,4 @@ fi
 cat History.md |
   sed "1,/^${current_version} \//d" |
   sed -n "/^${previous_version} \//q;p" |
-  sed '/^\s*$/d' |
-  grep -Ev "^=+$"
+  grep '^\s*[*]'
