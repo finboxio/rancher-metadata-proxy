@@ -1,4 +1,9 @@
 
+0.0.5 / 2017-09-17
+==================
+
+  * Enable auto-publish with release notes from History.md
+
 0.0.4 / 2017-09-17
 ==================
 
