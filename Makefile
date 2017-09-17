@@ -47,12 +47,12 @@ docker.push: docker.build
 	@docker push $(DOCKER_VERSION)
 	@docker push $(DOCKER_LATEST)
 
-rancher.deploy: docker.push
+rancher.deploy:
 	@rancher-compose \
 		--url $(RANCHER_URL) \
 		--access-key $(RANCHER_ACCESS_KEY) \
 		--secret-key $(RANCHER_SECRET_KEY) \
-		-p mysql \
+		-p metadata \
 		-f stack/docker-compose.yml \
 		-r stack/rancher-compose.yml \
 		up --force-upgrade -d
