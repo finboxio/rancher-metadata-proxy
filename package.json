@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "preversion": "scripts/prerelease",
+    "version": "scripts/release",
+    "postversion": "scripts/postrelease",
+    "publish": "scripts/publish"
   },
   "repository": {
     "type": "git",
