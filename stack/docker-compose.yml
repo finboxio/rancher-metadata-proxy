@@ -1,0 +1,8 @@
+version: '3.0'
+services:
+  metadata:
+    image: finboxio/rancher-metadata-proxy
+    tty: true
+    stdin_open: true
+    environment:
+      PORT: 80
