@@ -1,6 +1,6 @@
 {
   "name": "rancher-metadata-proxy",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "HTTP proxy to internal rancher metadata servicw",
   "main": "index.js",
   "scripts": {
