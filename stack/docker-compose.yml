@@ -6,3 +6,5 @@ services:
     stdin_open: true
     environment:
       PORT: 80
+    labels:
+      lb.haproxy.80.frontend: 80/http
